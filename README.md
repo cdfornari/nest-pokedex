@@ -17,6 +17,10 @@ npm i -g @nestjs/cli
 ```
 docker-compose up -d
 ```
+5. Llenar base de datos con la semilla
+```
+GET request a http://localhost:3000/api/v2/seed
+```
 
 ## Stack
 * MongoDB

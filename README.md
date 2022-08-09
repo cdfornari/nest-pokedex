@@ -28,6 +28,17 @@ npm run start:dev
 GET request a http://localhost:3000/api/v2/seed
 ```
 
-## Stack
+# Production build
+1. Crear ```.env.prod``
+2. Llenar variables de entorno
+```
+MONGODB=mongodb://mongo-pokedex:27017/nest-pokemon
+```
+3. Crear imagen
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
+## Stack usado
 * MongoDB
 * NestJS
